@@ -9,7 +9,7 @@
 
 Just download and run the installer. There is no need to uninstall the older version first. If you do uninstall the older version, you will remove all your profiles and settings.
 
-Note for Gemini/Gemini2 ASCOM users: PHD2 requires Gemini ASCOM Driver [Version 1.0.56.0](https://groups.yahoo.com/neo/groups/Gemini_ASCOM_Driver/files/Installation_Files/) or newer.
+Note for Gemini/Gemini2 ASCOM users: PHD2 requires Gemini ASCOM Driver [Version 1.0.56.0](https://gemini-2.com/ASCOM.html) or newer.
 
 ### macOS downloads
 
