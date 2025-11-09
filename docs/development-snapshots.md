@@ -13,6 +13,27 @@ The online version of the help file for the latest snapshot build is [here][4].
 
 [//]: # (CHANGELOG)
 
+### 2.6.13dev8
+
+9 November 2025
+
+- Comet tool: disable multi-star guiding when comet tracking is enabled
+- Fix behavior when MultiStar guiding is enabled with guiding off
+- Equipment Profile Wizard improved and updated
+- Calibration Assistant improvements for encoder mounts and SB mounts
+- Prevent multiple PHD2 instances from sharing the same log files
+- Event Server: capture_single_frame method added
+- Fix message when user asks for details in old, no longer relevant calibration alert
+- ToupTek/OGMA cameras: display sensor temperature in stats window
+- ToupTek cameras: update SDK library to version 59.29465.20250907
+- ToupTek cameras: from ToupTek: enable camera's Conversion Gain mode when available
+- ZWO ASI cameras: update SDK library to version 1.38
+- INDI: Update INDI client to v2.1.5
+- Updated Czech translation, added Czech help file
+
+2.6.13dev8 | [Windows Download EXE](/phd2-2.6.13dev8-installer.exe) | [macOS Sonoma+ ZIP](/PHD2-2.6.13dev8-OSX-64-sonoma+.zip) | [macOS Ventura- ZIP](/PHD2-2.6.13dev8-OSX-64.zip)
+
+
 ### 2.6.13dev7
 
 11 January 2025
