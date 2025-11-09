@@ -1,6 +1,6 @@
 # Changelog
 
-[//] # (CHANGELOG)
+[//]: # (CHANGELOG)
 
 ### v2.6.13
 

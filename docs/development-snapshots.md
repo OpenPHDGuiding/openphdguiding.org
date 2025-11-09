@@ -11,7 +11,7 @@ The online version of the help file for the latest snapshot build is [here][4].
 [3]: https://github.com/OpenPHDGuiding/phd2/commits/master
 [4]: /man-dev
 
-[//] # (CHANGELOG)
+[//]: # (CHANGELOG)
 
 ### 2.6.13dev7
 
