@@ -1,5 +1,7 @@
 # Changelog
 
+[//] # (CHANGELOG)
+
 ### v2.6.13
 
 22 December 2023
