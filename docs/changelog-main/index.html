@@ -1,0 +1,169 @@
+                    <p>
+<h3>2.6.13</h3>
+22 December 2023
+<ul>
+<li>fix a problem where the camera settings are not displayed properly on some computers</li>
+</ul>
+                <p>
+<h3>2.6.12</h3>
+20 November 2023
+<ul>
+<li>New Calibration Assistant tool</li>
+<li>Multi-star guiding improvements: better tolerance to passing clouds or loss of stars after a large dither</li>
+<li>Various enhancements for mounts with high precision encoders</li>
+<li>Reduced CPU utilization when rendering the camera image on the screen</li>
+<li>The star profile can now be viewed without interpolation</li>
+<li>Improved help content and error messages</li>
+<li>Updated camera libraries: ZWO ASI, Moravian, Svbony, QHY, Touptek, Altair</li>
+<li>New/updated translations: Simplified Chinese, Traditional Chinese, Portuguese (Brazilian), Czech, Japanese, Spanish</li>
+</ul>
+                <p>
+<h3>2.6.11</h3>
+22 February 2022
+<ul>
+<li>Guiding Assistant updates</li>
+<li>Updated defaults for new profiles: HFD checking and multi-star enabled, star mass checking off</li>
+<li>The star profile window now shows the centroid coordinates</li>
+<li>Add support for observatory-class focal lengths</li>
+<li>Updated camera support: Svbony, Touptek, ZWO ASI</li>
+<li>Updated translations: French, Spanish</li>
+</ul>
+                <p>
+<h3>2.6.10</h3>
+26 June 2021
+<ul>
+<li>New Multi-star guiding option</li>
+<li>Various small UI improvements and minor bug fixes</li>
+<li>Updated camera support for Altair, ASCOM, INDI, QHY, SBIG, ToupTek, WDM, and ZWO ASI cameras</li>
+<li>Added support for Moravian and Svbony cameras</li>
+<li>Updated translations - Catalan, French, Spanish, Traditional Chinese</li>
+<li>Updated Help file</li>
+</ul>
+                <p>
+<h3>2.6.9</h3>
+4 July 2020
+<ul>
+<li>Updated Help file</li>
+<li>Guiding Assistant: improved dec backlash measurement to better handle some poorly behaving mounts</li>
+<li>Polar Drift Align: add Mirror option for OAG users</li>
+<li>Log uploader: do not display empty logs by default</li>
+<li>Fix background color in the Drift Align window to honor the window manager color theme</li>
+<li>INDI: remove the obsolete driver port selection option</li>
+<li>New Galician translation</li>
+<li>Updated French translation</li>
+<li>Updated Portuguese translation</li>
+</ul>
+                <p>
+<h3>2.6.8</h3>
+3 May 2020
+<ul>
+<li>No longer display an alert when little South movement is detected after calibration</li>
+<li>Altair cameras: update to SDK version 46.16909.2020.0404 (Windows)</li>
+<li>QHY cameras: fix incorrectly-reported bits-per-pixel value for 16-bit cameras</li>
+<li>Better tolerance of INDI/ASCOM mount drivers that incorrectly report guide speed</li>
+<li>Updated Traditional Chinese translation</li>
+</ul>
+                <p>
+<h3>2.6.7</h3>
+4 February 2020
+<ul>
+<li>Mac: 64-bit version of PHD2 for macOS Catalina</li>
+<li>PHD2 now produces a single debug and guide log per night rather than a set each time the app is launched</li>
+<li>Added checks for specific mount driver quirks</li>
+<li>Improvements to the log upload tool</li>
+<li>Altair cameras: update to SDK version 38.15031.2019.0706 (Windows)</li>
+<li>iOptrion iGuider camera support added</li>
+<li>Omegon Pro camera selection added</li>
+<li>QHY cameras: update SDK to version V2019.11.15.0 (Linux) and V20191115_0 (Mac)</li>
+<li>ZWO cameras: update SDK to version V1.14.1108 (windows, mac, linux)</li>
+<li>INDI camera improvements</li>
+<li>Workaround for imaging apps which fail to un-pause PHD2: stop button now un-pauses guiding</li>
+<li>Updated French, Korean, Russian, Traditional Chinese translations</li>
+<li>New Japanese translation of the help file</li>
+<li>Automatically update guide settings for changes to binning, pixel size and focal length</li>
+<li>New button on the main toolbar for auto-selecting a star</li>
+<li>New option to enable/disable audible beep for lost star</li>
+<li>Improvements and clarifications of various messages in the application</li>
+<li>Changing the Dec Flip calibration option now triggers a new calibration</li>
+<li>Guiding Assistant: improved guide setting recommendations</li>
+<li>Equipment profile wizard improvements, including specialized settings for mounts with high preceision encoders</li>
+<li>New server methods and notification updates</li>
+<li>Updated Help file</li>
+<li>Debug log and guide log improvements</li>
+</ul>
+                <p>
+<h3>2.6.6</h3>
+24 March 2019
+<ul>
+<li>Lots of improvements to the Guiding Assistant</li>
+<li>Updated camera support: Altair, QHY, SBIG, SSAG (Mac), ZWO ASI</li>
+<li>New ToupTek camera support for Windows</li>
+<li>New MallinCam SkyRaider camera support for Mac</li>
+<li>INDI SBIG AO support</li>
+<li>Better detection of problems like runaway guiding, excessive backlash, and calibration problems</li>
+<li>Improved backlash compensation</li>
+<li>New Meridian flip calibration tool</li>
+<li>New ZFilter guide algorithm</li>
+<li>Guide algorithm None has been removed</li>
+<li>INDI improvements</li>
+<li>Various minor user interface fixes</li>
+<li>Updated Help file</li>
+<li>Updated translations</li>
+</ul>
+                <p>
+<h3>2.6.5</h3>
+<p>30 April 2018</p>
+<ul>
+<li>New Static Polar Align tool and Polar Drift tool</li>
+<li>New tool to upload log files for review (Help &gt; Upload Log Files)</li>
+<li>Improved Backlash compensation with additional controls and improved backlash measurement in the Guiding Assistant</li>
+<li>New Profile Wizard improved detection of properties of connected gear</li>
+<li>Improved handling of camera binning and mount guide speed changes</li>
+<li>Dither settling now ignores dec distance when dec guide mode is None</li>
+<li>Some minor UI tweaks like more explicitly labeling pixels vs arc-seconds units, showing help info in status bar as menu items are highlighted,&nbsp;and layout fixes for high resolution displays</li>
+<li>Remove modal dialog boxes from most camera connections</li>
+<li>Allow star auto-selection to select stars closer to the edge of the frame</li>
+<li>Altair Cameras: update SDK to version 20_12_2017</li>
+<li>Atik Cameras: binning support added</li>
+<li>ZWO Cameras: updated Windows SDK to V1.13.1.9</li>
+<li>Guide log enhancements (additional logging)</li>
+<li>INDI fixes</li>
+<li>Server API additional methods</li>
+<li>Updated translations - French, German, Russian, Traditional Chinese</li>
+</ul>                <p>
+<h3>2.6.4</h3>
+25 September 2017
+<ul>
+ 	<li>New Predictive PEC Guide algorithm for RA</li>
+ 	<li>INDI support added for Windows and Mac</li>
+ 	<li>Updated native camera support for QHY, ZWO, SX, and Altair cameras</li>
+ 	<li>Improved detection of low-SNR stars by more accurate background calculation</li>
+ 	<li>PHD2 now checks for PHD2 updates</li>
+ 	<li>AO: better stability when large bumps are required</li>
+ 	<li>Various UI improvements, such as allowing arbitrary camera exposure durations</li>
+ 	<li>New option for avoiding hot pixels: minimum star HFD threshold</li>
+ 	<li>New option for star saturation detection: max ADU threshold</li>
+ 	<li>New image logging options based on trigger events like star lost or large offset</li>
+ 	<li>Comet tracking improvements</li>
+ 	<li>Server API: addition of new API methods</li>
+ 	<li>Diagnostic improvements including log file enhancements and more info in fits headers for saved images</li>
+ 	<li>Updated translations including a new Portuguese (Brazilian) translation</li>
+ 	<li>Help file updates</li>
+</ul>                <p>
+<h3>2.6.3</h3>
+<p>12 February 2017</p>
+<ul>
+<li>Reliablility improvements and SDK updates for various cameras: ZWO, SX, Altair, SBIG, and WDM webcams</li>
+<li>Comet tool fixes</li>
+<li>Display improvements for small screens and high-DPI screens</li>
+<li>New star-cross test tool</li>
+<li>Stats window now displays image size and guider FOV</li>
+<li>AO enhancements: display RA and Dec directions on the AO graph, automatically increase bump step size when dither settling</li>
+<li>Allow Dec dither when Dec guide mode is north or south by temporarily switching to bi-directional dec guiding until dither settles</li>
+<li>Star mass change detection now works when exposure is Auto</li>
+<li>OSX: disable AppNap on OSX versions &gt;= 10.9</li>
+<li>Server API: various new functions added</li>
+<li>Various logging and diagnostic improvements</li>
+<li>Updated translations</li>
+<li>Updated help documentation</li>
+</ul>
