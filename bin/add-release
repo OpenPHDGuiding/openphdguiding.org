@@ -1,0 +1,163 @@
+#!/usr/bin/env bash
+
+# set -x
+set -e
+
+add-dev-release () (
+    if [[ ! -f $changelog_dev ]]; then
+        echo >&2 "${changelog_dev}: not found"
+        exit 1
+    fi
+
+    # update development-snapshots.md by appending the changelog items
+    # and download links after the marker
+    #
+    update-changelog-md do-links "$TOP"/docs/development-snapshots.md "$changelog_dev"
+
+    # update changelog-dev/index.html by adding the changelog html
+    # markup at the top of the file
+    #
+    update-changelog-html "$TOP"/docs/changelog-dev/index.html "$changelog_dev"
+)
+
+add-main-release () (
+    if [[ ! -f $changelog_full ]]; then
+        echo >&2 "$changelog_full: not found"
+        exit 1
+    fi
+
+    # update changelog-main/index.html by adding the changelog html
+    # markup at the top of the file
+    #
+    update-changelog-html "$TOP"/docs/changelog-main/index.html "$changelog_full"
+
+    # update changelog.md by appending the changelog items after the
+    # marker
+    #
+    update-changelog-md "$TOP"/docs/changelog.md "$changelog_full"
+
+    # downloads.md needs to be manually edited for now
+    #
+    echo "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+    echo "@@@@@@                                   @@@@@@@@"
+    echo "@@@@@@ REMINDER: update docs/download.md @@@@@@@@"
+    echo "@@@@@@                                   @@@@@@@@"
+    echo "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+)
+
+update-changelog-md () (
+    do_links=
+    if [[ $1 == do-links ]]; then
+        do_links=1
+        shift
+    fi
+
+    md=$1
+    changelog=$2
+
+    win_exe=phd2-${rev}-installer.exe
+    mac64s_zip=PHD2-${rev}-OSX-64-sonoma+.zip
+    mac64_zip=PHD2-${rev}-OSX-64.zip
+
+    # update development-snapshots.md by appending the changelog items
+    # and download links after the marker
+    #
+    sponge "$md" < <(
+        marker='[//]: # (CHANGELOG)'
+        while IFS= read -r line; do
+            echo "$line"
+            if [[ $line == "$marker" ]]; then
+                echo
+                echo "### $rev"
+                echo
+                echo "$RELEASE_DATE"
+                echo
+                while IFS= read -r item; do
+                    echo "- $item"
+                done < "$changelog_dev"
+                echo
+                if [[ $do_links ]]; then
+                    echo "${rev} | [Windows Download EXE](/${win_exe}) | [macOS Sonoma+ ZIP](/${mac64s_zip}) | [macOS Ventura- ZIP](/${mac64_zip})"
+                    echo
+                fi
+            fi
+        done < "$md"
+    )
+)
+
+update-changelog-html () (
+    index=$1
+    changelog=$2
+
+    sponge "$index" < <(
+        echo '        <p>'
+        echo "<h4>${rev}</h4>"
+        echo "${RELEASE_DATE}"
+        echo '<ul>'
+        while IFS= read -r item; do
+            item=$(html-escape "$item")
+            echo "<li>${item}</li>"
+        done < "$changelog"
+        echo '</ul>'
+        cat "$index"
+    )
+)
+
+html-escape () {
+    sed 's/&/\&amp;/g; s/</\&lt;/g; s/>/\&gt;/g; s/"/\&quot;/g; s/'"'"'/\&#39;/g' <<<"$1"
+}
+
+is-full-release () (
+    ver=${rev/dev*}
+    subver=${rev/$ver}
+    [[ ! $subver ]]
+)
+
+usage () {
+    echo "Usage: add-release -r rev -d ChangeLog-dev [-f ChangeLog-full]"
+}
+
+# --- main ---
+
+# Usage: add-release -r rev -d ChangeLog-dev [-f ChangeLog-full]
+
+SCRIPT_DIR=${BASH_SOURCE[0]%/*}
+TOP=$(realpath "${SCRIPT_DIR}/..")
+
+rev=
+changelog_dev=
+changelog_full=
+
+while getopts 'd:f:r:' opt "$@"; do
+    case $opt in
+        d) changelog_dev=$OPTARG ;;
+        f) changelog_full=$OPTARG ;;
+        r) rev=$OPTARG ;;
+        *) usage >&2 ; exit 1 ;;
+    esac
+done
+shift $((OPTIND - 1))
+
+if [[ ! $rev || ! $changelog_dev ]]; then
+    usage >&2
+    exit 1
+fi
+
+rev_pattern='^2\.[1-9][0-9]*\.[1-9][0-9]*(dev[1-9][0-9]*)?$'
+if [[ ! $rev =~ $rev_pattern ]]; then
+    echo >&2 "Invalid rev '$rev'"
+    exit 1
+fi
+
+if is-full-release && [[ ! $changelog_full ]]; then
+    echo >&2 "ChangeLog-full is required for a main series release"
+    exit 1
+fi
+
+RELEASE_DATE=$(date "+%-d %B %Y")
+
+add-dev-release
+
+if is-full-release; then
+    add-main-release
+fi
