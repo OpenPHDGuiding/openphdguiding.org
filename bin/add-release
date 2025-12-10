@@ -74,7 +74,7 @@ update-changelog-md () (
                 echo
                 while IFS= read -r item; do
                     echo "- $item"
-                done < "$changelog_dev"
+                done < "$changelog"
                 echo
                 if [[ $do_links ]]; then
                     echo "${rev} | [Windows Download EXE](/${win_exe}) | [macOS Sonoma+ ZIP](/${mac64s_zip}) | [macOS Ventura- ZIP](/${mac64_zip})"

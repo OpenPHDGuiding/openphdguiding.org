@@ -6,11 +6,21 @@
 
 10 December 2025
 
-- Altair cameras: update to SDK 59.30004.20251116
-- ZWO ASI cameras: update SDK library to V1.40
-- INDI client: update to version 2.1.6
-- Updates to the Traditional Chinese translation
-
+- Windows: support for obsolete cameras has been removed: Fishcamp, Meade DSI, SAC4-2, SSAG. To use these cameras, stick with an older version of PHD2.
+- Mac: no longer supporting 32-bit Macs. Stick with an older version to use PHD2 on a 32-bit Mac.
+- Improved handling of image scale changes
+- Improved alert messages when guiding is ineffective
+- MultiStar guiding interacts better with subframes and the comet tool
+- Improved Guiding Assistant and Calibration Assistant recommendations for encoder mounts
+- Improved star profile display
+- Equipment Profile Wizard improved and updated
+- Faster display of camera images
+- Updated camera support: Altair, OGMA, Player One, QHY, Svbony, ToupTek and ZWO ASI cameras
+- opencv-accessible cameras are now available on Mac and Linux
+- INDI rotator support added
+- Udated translations - Czech, Spanish, Traditional Chinese
+- Help file updates
+- Special thanks to our new contributors - see the Help > About window
 
 ### v2.6.13
 
