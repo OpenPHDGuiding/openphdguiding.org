@@ -26,25 +26,24 @@ Patrick Chevalley has PHD2 Ubuntu packages hosted on [Launchpad][1]. If you are 
 
 ### Current version
 
-[Download v2.6.13 for Windows :material-microsoft-windows:](/phd2-2.6.13-installer.exe){ .md-button .md-button--primary }
+[Download v2.6.14 for Windows :material-microsoft-windows:](/phd2-2.6.14-installer.exe){ .md-button .md-button--primary }
 
-[Download v2.6.13 macOS Sonoma+ :fontawesome-brands-apple:](/PHD2-2.6.13-OSX-64-sonoma+.zip){ .md-button .md-button--primary }
+[Download v2.6.14 macOS Sonoma+ :fontawesome-brands-apple:](/PHD2-2.6.14-OSX-64-sonoma+.zip){ .md-button .md-button--primary }
 
-[Download v2.6.13 macOS Ventura and older :fontawesome-brands-apple:](/PHD2-2.6.13-OSX-64.zip){ .md-button .md-button--primary }
-
-[Download v2.6.13 macOS 32-bit :fontawesome-brands-apple:](/PHD2-2.6.13-OSX.zip){ .md-button .md-button--primary }
+[Download v2.6.14 macOS Ventura and older :fontawesome-brands-apple:](/PHD2-2.6.14-OSX-64.zip){ .md-button .md-button--primary }
 
 ### Older versions
 
-|         |                                                    |                                                      |                                               |
-| ------- | -------------------------------------------------- | ---------------------------------------------------- | --------------------------------------------- |
-| v2.6.12 | [Windows Download EXE](/phd2-2.6.12-installer.exe) | [macOS Sonoma+ ZIP](/PHD2-2.6.12-OSX-64-sonoma+.zip) | [macOS Ventura- ZIP](/PHD2-2.6.12-OSX-64.zip) |
-| v2.6.11 | [Windows Download EXE](/phd2-2.6.11-installer.exe) | [macOS Ventura- ZIP](/PHD2-2.6.11-OSX-64.zip)        | [macOS 32-bit ZIP](/PHD2-2.6.11-OSX.zip)      |
-| v2.6.10 | [Windows Download EXE](/phd2-2.6.10-installer.exe) | [macOS Ventura- ZIP](/PHD2-2.6.10-OSX-64.zip)        | [macOS 32-bit ZIP](/PHD2-2.6.10-OSX.zip)      |
-| v2.6.9  | [Windows Download EXE](/phd2-2.6.9-installer.exe)  | [macOS Ventura- ZIP](/PHD2-2.6.9-OSX-64.zip)         | [macOS 32-bit ZIP](/PHD2-2.6.9-OSX.zip)       |
-| v2.6.8  | [Windows Download EXE](/phd2-2.6.8-installer.exe)  | [macOS Ventura- ZIP](/PHD2-2.6.8-OSX-64.zip)         | [macOS 32-bit ZIP](/PHD2-2.6.8-OSX.zip)       |
-| v2.6.7  | [Windows Download EXE](/phd2-2.6.7-installer.exe)  | [macOS Ventura- ZIP](/PHD2-2.6.7-OSX-64.zip)         | [macOS 32-bit ZIP](/PHD2-2.6.7-OSX.zip)       |
-| v2.6.6  | [Windows Download EXE](/phd2-2.6.6-installer.exe)  | [macOS 32-bit ZIP](/PHD2-2.6.6-OSX.zip)              |                                               |
-| v2.6.5  | [Windows Download EXE](/phd2-2.6.5-installer.exe)  |                                                      |                                               |
-| v2.6.4  | [Windows Download EXE](/phd2-2.6.4-installer.exe)  |                                                      |                                               |
-| v2.6.3  | [Windows Download EXE](/phd2-2.6.3-installer.exe)  |                                                      |                                               |
+|         |                                                    |                                                      |                                                                                        |
+| ------- | -------------------------------------------------- | ---------------------------------------------------- | -------------------------------------------------------------------------------------- |
+| v2.6.13 | [Windows Download EXE](/phd2-2.6.13-installer.exe) | [macOS Sonoma+ ZIP](/PHD2-2.6.13-OSX-64-sonoma+.zip) | [macOS Ventura- ZIP](/PHD2-2.6.13-OSX-64.zip) [macOS 32-bit ZIP](/PHD2-2.6.13-OSX.zip) |
+| v2.6.12 | [Windows Download EXE](/phd2-2.6.12-installer.exe) | [macOS Sonoma+ ZIP](/PHD2-2.6.12-OSX-64-sonoma+.zip) | [macOS Ventura- ZIP](/PHD2-2.6.12-OSX-64.zip)                                          |
+| v2.6.11 | [Windows Download EXE](/phd2-2.6.11-installer.exe) | [macOS Ventura- ZIP](/PHD2-2.6.11-OSX-64.zip)        | [macOS 32-bit ZIP](/PHD2-2.6.11-OSX.zip)                                               |
+| v2.6.10 | [Windows Download EXE](/phd2-2.6.10-installer.exe) | [macOS Ventura- ZIP](/PHD2-2.6.10-OSX-64.zip)        | [macOS 32-bit ZIP](/PHD2-2.6.10-OSX.zip)                                               |
+| v2.6.9  | [Windows Download EXE](/phd2-2.6.9-installer.exe)  | [macOS Ventura- ZIP](/PHD2-2.6.9-OSX-64.zip)         | [macOS 32-bit ZIP](/PHD2-2.6.9-OSX.zip)                                                |
+| v2.6.8  | [Windows Download EXE](/phd2-2.6.8-installer.exe)  | [macOS Ventura- ZIP](/PHD2-2.6.8-OSX-64.zip)         | [macOS 32-bit ZIP](/PHD2-2.6.8-OSX.zip)                                                |
+| v2.6.7  | [Windows Download EXE](/phd2-2.6.7-installer.exe)  | [macOS Ventura- ZIP](/PHD2-2.6.7-OSX-64.zip)         | [macOS 32-bit ZIP](/PHD2-2.6.7-OSX.zip)                                                |
+| v2.6.6  | [Windows Download EXE](/phd2-2.6.6-installer.exe)  | [macOS 32-bit ZIP](/PHD2-2.6.6-OSX.zip)              |                                                                                        |
+| v2.6.5  | [Windows Download EXE](/phd2-2.6.5-installer.exe)  |                                                      |                                                                                        |
+| v2.6.4  | [Windows Download EXE](/phd2-2.6.4-installer.exe)  |                                                      |                                                                                        |
+| v2.6.3  | [Windows Download EXE](/phd2-2.6.3-installer.exe)  |                                                      |                                                                                        |
