@@ -2,6 +2,16 @@
 
 [//]: # (CHANGELOG)
 
+### 2.6.14
+
+10 December 2025
+
+- Altair cameras: update to SDK 59.30004.20251116
+- ZWO ASI cameras: update SDK library to V1.40
+- INDI client: update to version 2.1.6
+- Updates to the Traditional Chinese translation
+
+
 ### v2.6.13
 
 22 December 2023
