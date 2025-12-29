@@ -18,7 +18,7 @@
 - Updated camera support: Altair, OGMA, Player One, QHY, Svbony, ToupTek and ZWO ASI cameras
 - opencv-accessible cameras are now available on Mac and Linux
 - INDI rotator support added
-- Udated translations - Czech, Spanish, Traditional Chinese
+- Updated translations - Czech, Spanish, Traditional Chinese
 - Help file updates
 - Special thanks to our new contributors - see the Help > About window
 
