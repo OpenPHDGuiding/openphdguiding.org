@@ -33,7 +33,7 @@ markdown_extensions:
 nav:
   - Home: index.md
   - Features: features.md
-  - News: blog/index.md
+  - Learn: learn.md
   - Changelog: changelog.md
   - Download: downloads.md
   - Documentation: documentation.md
