@@ -4,12 +4,27 @@ PHD2 is telescope guiding software that simplifies the process of tracking a gui
 
 ![Screenshot](assets/phd2-screenshot.jpg){ width="75%" }
 
-- Easy-to-use, “push here dummy” guiding for beginners
-- Sophisticated guiding and analysis tools for experienced users
+PHD2 is the next generation of guiding software for amateurs of all experience levels
+
+### For beginning imagers
+
+- Setup wizard to get guiding started with just a few mouse-clicks
 - Extensive support for commonly-used equipment
-- Easy upgrade/co-installation with PHD1, including many new features
-- Available for Windows, Mac, and Linux
-- Extensive online help and responsive product support
+- Smart calibration with automatic adjustment for side-of-pier and pointing location
+- Intelligent default settings for out-of-the-box results
+- Tools for drift alignment and comet-tracking
+- Proactive suggestions and advisory messages to improve your guiding
+
+### For more experienced imagers
+
+- Multiple algorithm choices for each telescope axis
+- Guiding Assistant for measuring mount performance
+- Extensive visualization tools for fine-tuning and review
+- Automatic management of dark-frame libraries and bad-pixel maps
+- Quick and easy switching between multiple imaging configurations
+- Support for adaptive optics and rotator devices
+- Automation interfaces for 3rd party imaging apps
+
 
 ![Telescope-guiding](assets/option1.png){ width="75%" }
 
