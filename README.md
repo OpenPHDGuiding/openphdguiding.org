@@ -12,7 +12,7 @@
 uv run mkdocs serve
 ```
 
-Build the static site
+## Build the static site
 
 ```
 uv run mkdocs build
