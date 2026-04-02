@@ -33,7 +33,6 @@ markdown_extensions:
 nav:
   - Home: index.md
   - Learn: learn.md
-  - Changelog: changelog.md
   - Download: downloads.md
   - Documentation: documentation.md
   - Getting Help: getting-help.md
