@@ -4,7 +4,6 @@ PHD2 is telescope guiding software that simplifies the process of tracking a gui
 
 ![Screenshot](assets/phd2-screenshot.jpg){ width="75%" }
 
-PHD2 is the next generation of guiding software for amateurs of all experience levels
 
 ### For beginning imagers
 
