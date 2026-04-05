@@ -31,10 +31,10 @@ add-main-release () (
     #
     update-changelog-html "$TOP"/docs/changelog-main/index.html "$changelog_full"
 
-    # update changelog.md by appending the changelog items after the
-    # marker
+    # update the changelog in downloads.md by appending the changelog
+    # items after the marker
     #
-    update-changelog-md "$TOP"/docs/changelog.md "$changelog_full"
+    update-changelog-md "$TOP"/docs/downloads.md "$changelog_full"
 
     # downloads.md needs to be manually edited for now
     #
