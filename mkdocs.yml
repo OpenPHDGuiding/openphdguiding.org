@@ -32,9 +32,7 @@ markdown_extensions:
       permalink: true
 nav:
   - Home: index.md
-  - Features: features.md
-  - News: blog/index.md
-  - Changelog: changelog.md
+  - Learn: learn.md
   - Download: downloads.md
   - Documentation: documentation.md
   - Getting Help: getting-help.md
