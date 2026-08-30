@@ -13,6 +13,27 @@ The online version of the help file for the latest snapshot build is [here][4].
 
 [//]: # (CHANGELOG)
 
+### 2.6.14dev1
+
+29 August 2026
+
+- Additional binning options: PHD2 can now do binning in software in addition to camera hardware binning
+- Guiding assistant: improved recommandations for binning
+- Calibration assistant can now start mount tracking if needed
+- Alpaca camera and mount support added
+- CameraFrames diagnostic folders are now removed automatically after 30 days
+- New profile wizard: improved messages regarding rotators
+- Debug logging improvements
+- ZWO ASI cameras: better handling of subframes when subframe size changes
+- OGMA and ToupTek cameras: fix bug where data is not pulled from the camera correctly in 8-bit mode
+- ZWO ASI cameras: update SDK to V1.41
+- Touptek cameras Update Touptek lib to version 60.32226.20260808
+- QHY Cameras: Update SDK libraries to version 25.09.29
+- PlayerOne cameras: update to SDK v3.10.0
+
+2.6.14dev1 | [Windows Download EXE](/phd2-2.6.14dev1-installer.exe) | [macOS Sonoma+ ZIP](/PHD2-2.6.14dev1-OSX-64-sonoma+.zip) | [macOS Ventura- ZIP](/PHD2-2.6.14dev1-OSX-64.zip)
+
+
 ### 2.6.14
 
 10 December 2025
