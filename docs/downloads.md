@@ -17,7 +17,10 @@ For macOS 10.14 Mojave and newer, install the 64-bit version of PHD2. For older 
 
 ### Linux packages
 
-Patrick Chevalley has PHD2 Ubuntu packages hosted on [Launchpad][1]. If you are using another Linux distro, you can build PHD2 from source: [Building PHD2 on Linux][2].
+**Ubuntu**: Patrick Chevalley has PHD2 Ubuntu packages hosted on [Launchpad][1].  
+**Fedora**: `dnf install phd2`
+
+If you are using another Linux distro, you can build PHD2 from source: [Building PHD2 on Linux][2].  
 
 [1]: https://launchpad.net/~pch/+archive/ubuntu/phd2
 [2]: https://github.com/OpenPHDGuiding/phd2/wiki/BuildingPHD2OnLinux
