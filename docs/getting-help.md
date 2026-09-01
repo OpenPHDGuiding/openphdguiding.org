@@ -1,18 +1,8 @@
 # Getting Help
 
-## Resources for Self-Help
-
-Answers to common questions about PHD2 can be found in the [Troubleshooting section][1] of the PHD2 Help or in the [PHD2 Best Practices][2] guide.
-
-There are also several very informative in-depth videos done by the authors that will advance your understanding and help you get the most from PHD2:
-
-- Guiding Basics: <https://www.youtube.com/watch?v=ty8hukjAPMw>
-- Optimizing Guiding: <https://www.youtube.com/watch?v=ifbLY6Q-cN8>
-- Understanding PHD2 Calibration: <https://www.youtube.com/watch?v=MzjyjEpDW90>
-
 ## How to ask for help with PHD2
 
-If you still can’t find the answer to your question you can ask for help in the [PHD2 Forum][3].
+If you can’t find the answer to your question on the Self-Help tab, you can ask for help in the [PHD2 Forum][3].
 
 When you post, make sure to include your PHD2 Log Files by using PHD2’s built-in Log Uploader feature. A step by step guide to using this feature and attaching logs to your post is below.
 
